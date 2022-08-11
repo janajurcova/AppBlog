@@ -1,0 +1,44 @@
+/* .layout {
+  display: flex;
+} */
+
+/* .layout-cover {
+  min-height: 100vh;
+  border-left: 1px solid var(--text);
+  flex: 1;
+  width: 80%;
+  margin: 0 auto;
+  background-attachment: fixed;
+} */
+
+
+.logo {
+  height: 5rem;
+  padding-left: 1rem;
+}
+
+header {
+  padding: 1rem 0 1rem 0;
+  height: 6rem;
+}
+
+.main__content {
+  flex: 1;
+}
+
+@media (max-width: 650px) {
+  .layout {
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .layout-cover {
+    background-color: white;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+}

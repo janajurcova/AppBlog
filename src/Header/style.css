@@ -1,0 +1,120 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100vh;
+  align-items: center;
+  background-color:#f9f9f9;
+}
+
+.container {
+  display: flex;
+  width: 200px;
+  height: 100%;
+}
+
+header {
+  padding: 1rem 0 1rem 0;
+  height: 6rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: right;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #212529;
+  display: block;
+  margin: 0.5rem;
+}
+.userChoosed :hover {
+  text-decoration: underline 1px;
+}
+.userChoosed {
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  background-color: #f9f9f9;
+}
+.hamburger {
+  display: none;
+}
+.hamburger--open {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .page-header {
+    flex-direction: row-reverse;
+    border-right: none;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    min-height: 5rem;
+    min-width: 100%;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+
+  .navigation {
+    display: none;
+  }
+  .navigation {
+    flex-direction: row;
+  }
+  .navigation-link {
+    display: flex;
+    flex-grow: initial;
+    background-color: #f9f9f9;
+    font-size: 20px;
+    gap: 0px;
+  }
+  .navigation-bar {
+    position: absolute;
+    top: 0;
+    margin-top: 96px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 0;
+  }
+  .navigation-bar > li {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0;
+    width: 100%;
+    color: #212529;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #212529;
+  }
+  .hamburger {
+    display: block;
+    position: relative;
+    border: none;
+    color: #212529;
+    background-color: transparent;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  .hamburger span {
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: currentColor;
+    transition-property: opacity, transform;
+    transition-duration: 0.2s;
+  }
+}

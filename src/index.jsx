@@ -2,6 +2,9 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { initialState } from './utils/authorisation.js';
+import { RecentArticles } from './pages/ArticleList/index.jsx';
+import { Article } from './pages/ArticleDetail/index.jsx';
+import { Layout } from './Layout';
 import './style.css';
 
 
@@ -71,72 +74,29 @@ fetch('https://fullstack.exercise.applifting.cz/login', {
 Login();
 // if username...
 
-function RecentArticles() {
-  fetch('https://fullstack.exercise.applifting.cz/articles', {
-    mode: "no-cors",
-    method: 'GET',
-    headers: {
-      // 'content-type': 'application/json',
-      'accept': 'application/json',
-      'X-API-KEY': 'dca7877e-b3d6-4988-b724-f0698d48d641',
-      'authorisation': `${initialState.access_token}`
-    },
-    body: JSON.stringify
-      (
-        {
-          offset: 0,
-          limit: 10
-        }
-      )
-  })
-    .then(response => response.json())
-    .then(response => {
-      console.log('10', response)
-      // xApiKey 
-    })
-    .catch(err => {
-      console.log(err);
-    });
-    
-  // "X-API-KEY": initialState.xApiKey,
-  //   Authorization: "dca7877e-b3d6-4988-b724-f0698d48d641",
-
-  return (
-    <main style={{ padding: '1rem 0' }}>
-      <h2>Recent Articles</h2>
-    </main>
-  );
-}
 
 
-function Article() {
-  return (
-    <main style={{ padding: '1rem 0' }}>
-      <h2>Article</h2>
-    </main>
-  );
-}
+const App = () => { 
+//   <div>
+//     <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem' }}>
+//       <Link to="/articlelist">Article list</Link>|{' '}
+//       <Link to="/article">Article detail</Link>
+//     </nav>
+//     <Outlet />
+//   </div>
+// );
 
-
-const App = () => (
-  <div>
-    <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem' }}>
-      <Link to="/invoices">Article</Link> |{' '}
-      <Link to="/expenses">Recent Article</Link>
-    </nav>
-    <Outlet />
-  </div>
-);
-
-createRoot(document.querySelector('#app')).render(
+return ( 
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="expenses" element={<RecentArticles />} />
-        <Route path="invoices" element={<Article />} />
+        <Route path="/" element={<Layout />}>
+        <Route path="articlelist" element={<RecentArticles />} />
+        <Route path="article" element={<Article />} />
       </Route>
     </Routes>
   </BrowserRouter>
 );
+};
 
+createRoot(document.querySelector('#app')).render(<App />);
 
