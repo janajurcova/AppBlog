@@ -92,6 +92,7 @@ return (
         <Route path="/" element={<Layout />}>
         <Route path="articlelist" element={<RecentArticles />} />
         <Route path="article" element={<Article />} />
+        <Route path="login" element={<Login />} />
       </Route>
     </Routes>
   </BrowserRouter>

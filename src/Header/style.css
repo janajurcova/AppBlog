@@ -5,9 +5,11 @@
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
-  min-width: 100vh;
-  align-items: center;
-  background-color:#f9f9f9;
+  min-width: 100%;
+  align-items: center; 
+  justify-content: space-around;
+  height: 56px;
+  background: #F8F9FA;
 }
 
 .container {
@@ -21,11 +23,15 @@ header {
   height: 6rem;
 }
 
+.logo {
+width: 39px;
+height: 44px;
+top: calc(50% - 44px/2 - 3px);
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
-  align-content: space-around;
-  justify-content: right;
 }
 
 .navigation-link {
@@ -39,15 +45,20 @@ header {
 }
 .userChoosed {
   border: none;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  background-color: #f9f9f9;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+ font-size: 16px;
+  background-color: transparent;
 }
 .hamburger {
   display: none;
 }
 .hamburger--open {
   display: none;
+}
+
+#login {
+    color: #2B7EFB;
 }
 
 @media (max-width: 650px) {
@@ -78,7 +89,7 @@ header {
   .navigation-bar {
     position: absolute;
     top: 0;
-    margin-top: 96px;
+    margin-top: 80px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -91,7 +102,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 0;
-    padding: 1em 0;
+    padding: 0.5rem 0;
     width: 100%;
     color: #212529;
     background-color: #f9f9f9;

@@ -1,21 +1,16 @@
-/* .layout {
+ .layout {
   display: flex;
-} */
+}
 
-/* .layout-cover {
+.layout-cover {
   min-height: 100vh;
   border-left: 1px solid var(--text);
   flex: 1;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   background-attachment: fixed;
-} */
+} 
 
-
-.logo {
-  height: 5rem;
-  padding-left: 1rem;
-}
 
 header {
   padding: 1rem 0 1rem 0;
@@ -38,7 +33,4 @@ header {
     padding: 0%;
   }
 
-  .logo {
-    height: 4rem;
-  }
 }

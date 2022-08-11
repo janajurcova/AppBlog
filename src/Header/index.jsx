@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import logo from './logo.png';
 
 const Menu = () => {
     const [active, setActive] = useState(false);
@@ -41,6 +42,15 @@ const Menu = () => {
                             About
                         </Link>
                     </li>
+                    <li>
+                        <Link
+                            className="navigation-link"
+                            to="/login"
+                            onClick={() => setActive(false)}
+                        >
+                            Login
+                        </Link>
+                    </li>
                 </ul>
             )}
         </>
@@ -55,13 +65,13 @@ export const Header = () => {
         <>
             <header className="page-header">
                 <Menu />
-                <div>
-                    <Link style={{ display: 'block', margin: '1rem 0' }} to="/">
-                       
-                    </Link>{' '}
-                </div>
 
                 <nav className="navigation">
+                    <div>
+                        <Link style={{ display: 'block', margin: '1rem 0' }} to="/">
+                            <img className="logo" src={logo} />
+                        </Link>{' '}
+                    </div>
                     <button
                         onClick={() => setWithLine(true)}
                         className="userChoosed"
@@ -89,7 +99,24 @@ export const Header = () => {
                             About
                         </Link>{' '}
                     </button>
+
                 </nav>
+                <button
+                    onClick={() => setWithLine(true)}
+                    className="userChoosed"
+                    id="login"
+                    disabled={withLine}
+                >
+                    <Link
+                        className="navigation-link"
+                        id="login"
+                        to="/login"
+                        alt={withLine ? 'userChoosed' : 'navigation-link'}
+                    >
+                        Login
+                        <i className="la la-arrow-right"></i>
+                    </Link>{' '}
+                </button>
             </header>
         </>
     );
