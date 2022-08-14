@@ -1,0 +1,32 @@
+.article {
+    display: flex;
+}
+
+.article img {
+/* position: absolute;
+left: 0%;
+right: 68.37%;
+top: 0%;
+bottom: 0%;
+background: url(cat.jpg);
+border-radius: 2px; */
+max-width: 250px;
+}
+
+.preview {
+    margin-left: 0.5rem;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.text {
+    margin: 10px 0;
+}
+.author,
+.comments {
+    font-size: 14px;
+    color: gray;
+}
+
