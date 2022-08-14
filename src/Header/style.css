@@ -57,21 +57,24 @@ top: calc(50% - 44px/2 - 3px);
   display: none;
 }
 
+
+
 #login {
     color: #2B7EFB;
 }
 
 @media (max-width: 650px) {
   .page-header {
-    flex-direction: row-reverse;
+    flex-direction: row;
     border-right: none;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid;
     min-height: 5rem;
     min-width: 100%;
     align-items: center;
     background-color: #f9f9f9;
   }
+
 
   .navigation {
     display: none;
@@ -128,4 +131,8 @@ top: calc(50% - 44px/2 - 3px);
     transition-property: opacity, transform;
     transition-duration: 0.2s;
   }
+
+#login {
+  display: none;
+}
 }

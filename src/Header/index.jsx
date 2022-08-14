@@ -20,8 +20,10 @@ const Menu = () => {
                     }
                 }}
             >
+                <img className="logo" src={logo} />
                 <i className="las la-bars"></i>
             </button>
+            
             {active && (
                 <ul className="navigation-bar">
                     <li>
@@ -65,7 +67,6 @@ export const Header = () => {
         <>
             <header className="page-header">
                 <Menu />
-
                 <nav className="navigation">
                     <div>
                         <Link style={{ display: 'block', margin: '1rem 0' }} to="/">
@@ -104,7 +105,6 @@ export const Header = () => {
                 <button
                     onClick={() => setWithLine(true)}
                     className="userChoosed"
-                    id="login"
                     disabled={withLine}
                 >
                     <Link

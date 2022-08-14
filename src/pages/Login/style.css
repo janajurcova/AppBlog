@@ -1,0 +1,40 @@
+.login {
+    justify-content: center;
+    align-items: center;
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+form {
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.175);
+    padding: 1rem;
+    margin-top: 8rem;
+}
+
+label,
+input,
+h2,
+.btn {
+    margin: 0.5rem
+}
+
+input,
+.btn {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-label {
+    margin-right: 250px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: 1px solid #007BFF;
+    cursor: pointer;
+    width: 69px;
+    height: 36px;
+}

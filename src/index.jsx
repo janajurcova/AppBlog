@@ -5,6 +5,7 @@ import { initialState } from './utils/authorisation.js';
 import { RecentArticles } from './pages/ArticleList/index.jsx';
 import { Article } from './pages/ArticleDetail/index.jsx';
 import { Layout } from './Layout';
+import { LoginUser } from './pages/Login';
 import './style.css';
 
 
@@ -92,7 +93,7 @@ return (
         <Route path="/" element={<Layout />}>
         <Route path="articlelist" element={<RecentArticles />} />
         <Route path="article" element={<Article />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<LoginUser />} />
       </Route>
     </Routes>
   </BrowserRouter>
