@@ -45,5 +45,49 @@
         "comments": 12,
         "action": ""
     }
+],
+"comments": [
+    {
+        "id": 1,
+        "author": "ES",
+        "comment": "To by šlo :)",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "author": "ES",
+        "comment": "Díky moc",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "author": "OT",
+        "comment": "Nic mi to neříká",
+        "postId": 2
+    },
+    {
+        "id": 4,
+        "author": "OT",
+        "comment": "Mám jinou zkušenost",
+        "postId": 2
+    },
+    {
+        "id": 5,
+        "author": "SA",
+        "comment": "Super čtení, těším se na další",
+        "postId": 3
+    },
+    {
+        "id": 6,
+        "author": "BB",
+        "comment": "Kdy bude další článek?",
+        "postId": 4
+    },
+    {
+        "id": 7,
+        "author": "BB",
+        "comment": "Tohle mi moc pomohlo.",
+        "postId": 4
+    }
 ]
 }

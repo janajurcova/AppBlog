@@ -14,7 +14,7 @@ export function TheComments({ comments }) {
         e.preventDefault();
         axios
             .post(
-                "https://my-json-server.typicode.com/",
+                "hhttps://my-json-server.typicode.com/janajurcova/AppBlog/comments",
                 comValue
             )
             .then((res) => {

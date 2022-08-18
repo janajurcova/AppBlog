@@ -29,7 +29,7 @@ export function NewArticle() {
 
         axios
             .post(
-                "https://my-json-server.typicode.com/",
+                "https://my-json-server.typicode.com/janajurcova/AppBlog/articles",
                 newArticle
             )
             .then((res) => {
