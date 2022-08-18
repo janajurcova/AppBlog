@@ -1,0 +1,64 @@
+.form {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.new-article {
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.header-but {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+button {
+    margin-left: 30px;
+  }
+
+
+.article-title {
+  display: flex;
+  position: relative;
+}
+
+span {
+    position: absolute;
+    top: -30px;
+  }
+
+input {
+    width: 1020px;
+    height: 40px;
+    display: block;
+    border: 1px solid ;
+    font-size: 1.2rem;
+   
+    padding: 5px 10px;
+  }
+
+
+.uploade-img {
+  margin-top: 40px;
+}
+
+  button {
+    float: left;
+  }
+
+
+.content {
+  margin-top: 110px;
+  position: relative;
+}
+
+  span {
+    position: absolute;
+    top: -30px;
+  }
+
+  textarea {
+    border: 1px solid;
+  }

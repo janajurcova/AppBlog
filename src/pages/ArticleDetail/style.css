@@ -1,0 +1,17 @@
+.oneArticle {
+    display: flex;
+}
+
+.articalDetail {
+   width: 700px;
+   margin: 0.5rem;
+}
+.comments {
+ border-top:1px solid gray;
+}
+.related {
+    width: 300px;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    border-left:1px solid gray;
+}

@@ -1,8 +1,6 @@
 .page-header {
   display: flex;
   flex-direction: row;
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 100%;

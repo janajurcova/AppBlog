@@ -1,0 +1,67 @@
+.comment {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+  h2 {
+    margin: 20px 30px;
+  }
+
+  .com {
+    margin-left: 30px;
+  }
+
+
+.profile-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.comment-p {
+  margin-left: 45px;
+  line-height: 25px;
+}
+
+.name-time {
+  margin: 30px 0 10px 45px;
+  display: flex;
+}
+
+span {
+    margin: 2px 0 0 10px;
+  }
+
+
+.com-icons {
+  margin: 10px 0 10px 45px;
+  display: flex;
+}
+
+span {
+    margin-right: 10px;
+  }
+
+svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+.up {
+  height: 18px;
+  padding: 0 10px;
+  border-left: 1px solid;
+  background-color: white;
+  color: black;
+}
+
+.down {
+  height: 18px;
+  padding: 0 10px;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  background-color: white;
+  color: black;
+}

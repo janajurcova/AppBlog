@@ -1,16 +1,15 @@
 .article {
     display: flex;
+    margin:  1rem 0;
 }
 
-.article img {
-/* position: absolute;
-left: 0%;
-right: 68.37%;
-top: 0%;
-bottom: 0%;
-background: url(cat.jpg);
-border-radius: 2px; */
-max-width: 250px;
+ .article img {
+max-width: 300px;
+
+} 
+.img {
+    background-image: url(./cat.jpg);
+    background-size: cover;
 }
 
 .preview {

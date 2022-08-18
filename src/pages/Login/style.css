@@ -3,27 +3,25 @@
     align-items: center;
     max-width: 25rem;
     margin: 0 auto;
-    display: flex;
+    margin-top: 8rem;
 }
 
 form {
     background-color: #FFFFFF;
     box-shadow: 1px 1px 30px rgba(0,0,0,0.175);
     padding: 1rem;
-    margin-top: 8rem;
     border-radius: 8px;
+    padding-bottom: 5rem;
 }
 
 label,
 input,
-h2,
-.btn {
+h2 {
     margin: 0.5rem
 }
 
-input,
-.btn {
-    width: 100%;
+input {
+    width: 98%;
     padding: 0.5rem;
 }
 
@@ -38,4 +36,6 @@ input,
     cursor: pointer;
     width: 69px;
     height: 36px;
+    float: right;
+    margin-top: 1rem;
 }

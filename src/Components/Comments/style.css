@@ -1,0 +1,27 @@
+.the-comments {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+  h2 {
+    margin: 40px 30px 20px 30px;
+  }
+
+.com-input {
+    margin-left: 30px;}
+
+.new-com input{
+        margin-left: 30px;
+        width: 860px;
+        height: 45px;
+        font-size: 1.3rem;
+        padding-left: 10px;
+      }
+
+.input-img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        top: 10px;
+      }

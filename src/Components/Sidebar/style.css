@@ -1,0 +1,17 @@
+.sidebar {
+  flex: 3;
+  margin-top: 80px;
+  border-left: 2px solid;
+  height: 700px;
+  padding-left: 20px;
+}
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+
+.side-articles h3 {
+    margin: 40px 0 10px 0;
+  }
+
