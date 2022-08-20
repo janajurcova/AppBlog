@@ -1,4 +1,5 @@
 import React from "react";
+import { TheButton } from "../Button"
 
 import "./style.css";
 
@@ -11,7 +12,7 @@ export function Form() {
                     <input type="text" className="form-control"></input>
                 </div>
                 <div className="uploade-img">
-                    <span>Featured image</span>
+                    <p>Featured image</p>
                     <TheButton value="Upload an Image" />
                 </div>
                 <div className="content">

@@ -1,0 +1,55 @@
+.one-article {
+  max-width: 1000px;
+  margin: 0 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+  img {
+    width: 400px;
+    height: 250px;
+  }
+
+
+.article-info {
+  margin: 30px;
+}
+
+
+
+.aut-date {
+  margin: 15px 0;
+  position: relative;
+
+}
+  span:first-child {
+    margin-right: 45px;
+  }
+  svg {
+    position: absolute;
+    left: 110px;
+    width: 20px;
+    height: 20px;
+  }
+
+
+.article-text {
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: rgba(25, 28, 31, 1);
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.link-com {
+  margin-left: 10px;
+}
+  a {
+  
+    text-decoration: none;
+  }
+
+  
+  .com {
+   
+    margin-left: 20px;
+  }

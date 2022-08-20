@@ -1,0 +1,16 @@
+.the-articles {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+  h1 {
+    margin: 50px 30px;
+    font-size: 2.5rem;
+  }
+
+
+.articles {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}

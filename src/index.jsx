@@ -7,6 +7,8 @@ import { Article } from './pages/ArticleDetail/index.jsx';
 import { Layout } from './Layout';
 import { LoginUser } from './pages/Login';
 import { EditArticle } from './pages/EditArticle/index.jsx';
+import { NewArticle } from './pages/NewArticle/index.jsx';
+import { MyArticles } from './pages/MyArticles/index.jsx';
 import './style.css';
 
 
@@ -93,10 +95,13 @@ return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+        <Route path="/" element={<ArticleList />} />
           <Route path="articlelist" element={<ArticleList />} />
           <Route path="article" element={<Article />} />
           <Route path="login" element={<LoginUser />} />
           <Route path="editarticle" element={<EditArticle />} />
+          <Route path="newarticle" element={<NewArticle />} />
+          <Route path="myarticles" element={<MyArticles />} />  
         </Route>
       </Routes>
     </BrowserRouter>

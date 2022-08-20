@@ -1,20 +1,21 @@
 .new-form {
   max-width: 1440px;
-  display: flex;
-  margin: 0 auto;
 }
 
 .header-but {
   display: flex;
   margin-bottom: 70px;
 }
-  button {
-    margin-left: 30px;
+
+.header-but h1 {
+  margin: 0;
+}
+.header-but button {
+    margin: 10px 0 10px 40px;
   }
 
 
 .article-title {
-  display: flex;
   position: relative;
 }
   span {
@@ -22,21 +23,24 @@
     top: -30px;
   }
 
-  input {
+ .form-control input {
     width: 1020px;
     height: 40px;
     display: block;
     border: 1px solid;
     font-size: 1.2rem;
     padding: 5px 10px;
+    margin: 0;
   }
 
 
 .uploade-img {
   margin-top: 40px;
 }
-  button {
+
+ button {
     float: left;
+    margin: 0;
 
   }
 

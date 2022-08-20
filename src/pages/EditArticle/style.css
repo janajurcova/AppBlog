@@ -7,6 +7,12 @@
   display: flex;
   margin: 30px 0 30px 30px;
 }
-button {
-    margin-left: 30px;
+.edit-header-but h1 {
+  margin: 0;
+}
+
+.edit-header-but button {
+
+    margin: 10px 0 10px 40px;
+    
   }

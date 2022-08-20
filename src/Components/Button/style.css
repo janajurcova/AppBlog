@@ -1,0 +1,9 @@
+button {
+  float: right;
+  margin-top: 5px;
+  padding: 9px 15px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background-color: #007BFF;
+}

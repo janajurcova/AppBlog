@@ -5,7 +5,6 @@
     margin: 0 auto;
     margin-top: 8rem;
 }
-
 form {
     background-color: #FFFFFF;
     box-shadow: 1px 1px 30px rgba(0,0,0,0.175);
@@ -20,9 +19,10 @@ h2 {
     margin: 0.5rem
 }
 
-input {
+.login-input input,
+.pass-input input {
     width: 98%;
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
 .form-label {
@@ -34,7 +34,6 @@ input {
     color: white;
     border: 1px solid #007BFF;
     cursor: pointer;
-    width: 69px;
     height: 36px;
     float: right;
     margin-top: 1rem;

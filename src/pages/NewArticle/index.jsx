@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
+import { TheButton } from "../../Components/Button";
 
 
 export function NewArticle() {
@@ -68,7 +69,7 @@ export function NewArticle() {
                     </div>
 
                     <div className="uploade-img">
-                        <span>Featured image</span>
+                        <p>Featured image</p>
                         <TheButton value="Upload an Image" />
                     </div>
                     <div className="content">
@@ -84,7 +85,6 @@ export function NewArticle() {
                     </div>
                 </form>
             </div>
-            )
         </div>
     );
 };

@@ -1,7 +1,10 @@
 import React from 'react'
 import { initialState } from '../../utils/authorisation.js';
 import { Link, Outlet } from 'react-router-dom';
-import { Article } from '../ArticleDetail/index.jsx';
+import axios from "axios";
+import { TheArticle } from '../../Components/TheArticle/index.jsx';
+import { TheArticles } from '../../Components/TheArticles';
+import { TheButton } from '../../Components/Button/index.jsx';
 import './style.css'
 import cat from './cat.jpg';
 
