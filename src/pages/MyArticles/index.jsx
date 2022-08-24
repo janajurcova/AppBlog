@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { TheButton } from "../../Components/Button";
 import "./style.css";
 import axios from "axios";
-import { IoPencil, IoTrash } from "react-icons/io5";
+import { IoPencil, IoTrashOutline } from "react-icons/io5";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
 export function MyArticles() {
@@ -43,28 +43,28 @@ export function MyArticles() {
                         </th>
                         <th>
                             Article title{" "}
-                            <div className="tit arrows">
+                            <div className="tit-arrows">
                                 <TiArrowSortedUp />
                                 <TiArrowSortedDown />
                             </div>
                         </th>
                         <th>
                             Perex{" "}
-                            <div className="per arrows">
+                            <div className="per-arrows">
                                 <TiArrowSortedUp />
                                 <TiArrowSortedDown />
                             </div>
                         </th>
                         <th>
                             Author{" "}
-                            <div className="aut arrows">
+                            <div className="aut-arrows">
                                 <TiArrowSortedUp />
                                 <TiArrowSortedDown />
                             </div>
                         </th>
                         <th>
                             # of comments{" "}
-                            <div className="com arrows">
+                            <div className="com-arrows">
                                 <TiArrowSortedUp />
                                 <TiArrowSortedDown />
                             </div>
@@ -89,7 +89,7 @@ export function MyArticles() {
                                     <IoPencil />
                                 </Link>
 
-                                <IoTrash onClick={hendleDelete} />
+                                <IoTrashOutline onClick={hendleDelete} />
                             </td>
                         </tr>
                     ))}

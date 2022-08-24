@@ -2,6 +2,9 @@ import React from 'react'
 import './style.css';
 import { Link } from "react-router-dom";
 import cat from '../ArticleList/cat.jpg';
+import { TheSidebar } from '../../Components/Sidebar';
+import { TheComments } from '../../Components/Comments';
+
 
 export function Article({ article }) {
     return (
@@ -30,16 +33,14 @@ export function Article({ article }) {
 
                     <p>The first small mammals shared the world with dinosaurs and had to adapt to hunting nocturnally, when their predators were less active. Whiskers helped these hungry animals find food and navigate dark terrain. This evolutionary adaptation also helps to explain why the whiskers of many nocturnal or aquatic carnivores — like rats, seals and walruses — are so prominent.
                     </p>
-
-            <div className="comments">
-                <h2>Comments</h2>
-            </div>
-            </div>
-            <div className="related">
-                <h2>Related</h2>
-                    <p>Wet vs. Dry Cat Food: Which is Better?</p>
-                    <p>A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly ...</p>
-            </div>
+                    <div className="comments">
+                        <h2>Comments</h2>
+                        {/* <TheComments /> */}
+                    </div>
+                </div>
+                <div className="related">
+                    <TheSidebar />
+                </div>
             </div>
         </main>
     );

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import TheComment from "../comment/TheComment";
-import profile from "../../assets/profile.jpg";
-
-import "../comments/comments.scss";
+import { TheComment } from "../Comment";
+import cat from "../../pages/ArticleList/cat.jpg"
+import "./style.css";
 
 export function TheComments({ comments }) {
     const [comValue, setComValue] = useState({
@@ -14,7 +13,7 @@ export function TheComments({ comments }) {
         e.preventDefault();
         axios
             .post(
-                "hhttps://my-json-server.typicode.com/janajurcova/AppBlog/comments",
+                "https://my-json-server.typicode.com/janajurcova/AppBlog/comments",
                 comValue
             )
             .then((res) => {
@@ -29,10 +28,10 @@ export function TheComments({ comments }) {
 
     return (
         <div className="the-comments">
-            <h2>{`Comments (${comments.length})`}</h2>
+            <h2>{`Comments (${comments})`}</h2>
             <div className="com-input">
                 <form className="new-com" onSubmit={hendleSubmit}>
-                    <img className="input-img" src={profile}></img>
+                    <img className="input-img" src={cat}></img>
                     <input
                         type="text"
                         placeholder="Join the discussion"

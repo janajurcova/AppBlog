@@ -12,8 +12,8 @@
     margin: 0;
   }
 
-.my-articles__btn {
-  margin: 1rem;
+.my-articles__header button {
+  margin: 10px;
 }
 
 .checkbox table {
@@ -24,17 +24,36 @@
 thead th {
     text-align: left;
     border-bottom: 2px solid;
-
     padding-left: 10px;
     padding-bottom: 8px;
     position: relative;
   }
-.arrows {
-      width: 30px;
-      margin: 0;
-      position: absolute;
+
+.tit-arrows {
+  position: absolute;
+  left: 105px;
+  bottom: 0;
+}
+.per-arrows {
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+}
+.aut-arrows {
+    position: absolute;
+  left: 70px;
+  bottom: 0;
+}
+.com-arrows {
+    position: absolute;
+        left: 100px;
+      bottom: 0;
+}
+ .action {
+      padding-left: 30px;
       bottom: 0;
     }
+
 svg {
         display: block;
         cursor: pointer;

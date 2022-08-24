@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import profile from "../../assets/profile.jpg";
-
+import cat from '../../pages/ArticleList/cat.jpg'
 import "./style.css";
-
 import { IoChevronDown, IoChevronUp } from "react-icons/io5";
 
 export function TheComment ({ comment }) {
@@ -10,7 +8,7 @@ export function TheComment ({ comment }) {
     return (
         <div className="comment">
             <div className="com">
-                <img className="profile-img" src={profile}></img>
+                <img className="profile-img" src={cat}></img>
                 <div className="name-time">
                     <h3>{comment.author}</h3>
                     <span>2 hours ago</span>

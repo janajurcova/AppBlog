@@ -28,4 +28,7 @@ h4 {
     font-size: 14px;
     color: gray;
 }
-
+ 
+.comments a {
+    color: #007BFF;
+}
