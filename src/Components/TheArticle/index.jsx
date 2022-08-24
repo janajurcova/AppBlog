@@ -9,7 +9,7 @@ export function TheArticle({ article }) {
         <div>
             <div className="the-articles">
                 <div className="one-article">
-                    <img src={img} alt="photo" />
+                    <img src={cat} alt="photo" />
                     <div className="article-info">
                         <h2>{article.title}</h2>
                         <div className="aut-date">

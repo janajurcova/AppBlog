@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import './style.css';
+import { Link } from "react-router-dom";
 
 
 export function LoginUser() {
@@ -64,7 +65,9 @@ export function LoginUser() {
                         required
                     ></input>
                 </div>
-                <button className="btn" type="submit">Log In</button>
+                <button className="btn" type="submit"> <Link to={'/myarticles'} className='login__btn--link'>
+                    Log In
+                </Link></button>
             </form>
         </div>
     );

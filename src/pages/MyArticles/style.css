@@ -12,6 +12,9 @@
     margin: 0;
   }
 
+.my-articles__btn {
+  margin: 1rem;
+}
 
 .checkbox table {
   margin-top: 100px;
@@ -26,38 +29,17 @@ thead th {
     padding-bottom: 8px;
     position: relative;
   }
-    .arrows {
+.arrows {
       width: 30px;
       margin: 0;
       position: absolute;
       bottom: 0;
     }
-      svg {
+svg {
         display: block;
         cursor: pointer;
       }
-    
 
-    .tit {
-      left: 100px;
-    }
-
-    .per {
-      left: 60px;
-    }
-
-    .aut {
-      left: 70px;
-    }
-
-    .com {
-      left: 130px;
-      margin-right: 10px;
-    }
-
-    .action {
-      padding-left: 30px;
-    }
   
 
   tbody td {

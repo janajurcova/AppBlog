@@ -38,3 +38,7 @@ h2 {
     float: right;
     margin-top: 1rem;
 }
+
+.login__btn--link {
+    color: white;
+}

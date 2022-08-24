@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { TheButton } from "../../Components/Button";
 import "./style.css";
 import axios from "axios";
-// import { IoPencil, IoTrash } from "react-icons/io5";
-// import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
+import { IoPencil, IoTrash } from "react-icons/io5";
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
 export function MyArticles() {
-    const [dataTable, setDataTable] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios("https://my-json-server.typicode.com/demo/articles")
-            .then((res) => setDataTable(res.data))
+        axios("https://my-json-server.typicode.com/janajurcova/AppBlog/articles")
+            .then((res) => setData(res.data))
             .catch((err) => console.error(err));
     }, []);
 
@@ -31,7 +31,7 @@ export function MyArticles() {
             <div className="my-articles__header ">
                 <h1>My Articles</h1>
                 <Link to={"/newarticle"}>
-                    <TheButton value="Create New Article" />
+                    <TheButton className="my-articles__btn" value="Create New Article" />
                 </Link>
             </div>
 
@@ -44,42 +44,48 @@ export function MyArticles() {
                         <th>
                             Article title{" "}
                             <div className="tit arrows">
-                            
+                                <TiArrowSortedUp />
+                                <TiArrowSortedDown />
                             </div>
                         </th>
                         <th>
                             Perex{" "}
                             <div className="per arrows">
-                              
+                                <TiArrowSortedUp />
+                                <TiArrowSortedDown />
                             </div>
                         </th>
                         <th>
                             Author{" "}
                             <div className="aut arrows">
-                              
+                                <TiArrowSortedUp />
+                                <TiArrowSortedDown />
                             </div>
                         </th>
                         <th>
                             # of comments{" "}
                             <div className="com arrows">
-                               
+                                <TiArrowSortedUp />
+                                <TiArrowSortedDown />
                             </div>
                         </th>
                         <th className="action">action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {dataTable.map((d, index) => (
+                    {data.map((d, index) => (
                         <tr key={index}>
                             <td>
                                 <input type="checkbox"></input>
+                                
                             </td>
+                            
                             <td>{d.title.substring(0, 25)}...</td>
-                            <td>{d.text.substring(0, 80)}...</td>
+                            <td>{d.perex.substring(0, 80)}...</td>
                             <td>{d.author}</td>
                             <td>{d.comments}</td>
                             <td>
-                                <Link to={"/edit-form"}>
+                                <Link to={"/editarticle"}>
                                     <IoPencil />
                                 </Link>
 
