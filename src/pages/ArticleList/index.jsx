@@ -50,84 +50,87 @@ import cat from './cat.jpg';
 // };
 
 export function ArticleList() {
-    const [articles, setArticles] = useState([]);
+    
+       // ---real version in Progress-----
+    // const [articles, setArticles] = useState([]);
 
-    useEffect(() => {
-        axios("https://fullstack.exercise.applifting.cz/articles", {
-            method: "GET",
-            mode: "cors",
-            headers: {
-                "Content-Type": "application/json",
-                "X-API-KEY": "dca7877e-b3d6-4988-b724-f0698d48d641",
-                'Authorization': `Bearer ${localStorage.getItem("token")}`
-            }
-        })
-            .then((res) => {
-                setArticles(res.data.items);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, []);
+//     useEffect(() => {
+//         axios("https://fullstack.exercise.applifting.cz/articles", {
+//             method: "GET",
+//             mode: "cors",
+//             headers: {
+//                 "Content-Type": "application/json",
+//                 "X-API-KEY": "dca7877e-b3d6-4988-b724-f0698d48d641",
+//                 'Authorization': `Bearer ${localStorage.getItem("token")}`
+//             }
+//         })
+//             .then((res) => {
+//                 setArticles(res.data.items);
+//                 console.log("funguju");
+//             })
+//             .catch((err) => {
+//                 console.log(err);
+//             });
+//     }, []);
 
-    return (
-        <div>
-            <TheArticles articles={articles} />
-        </div>
-    );
-};
+//     return (
+//         <div>
+//             <TheArticles articles={articles} />
+//         </div>
+//     );
+// };
 
 // -----MOCK ARTICLES----!!!!---you can use it
-// return ( 
-//         <main style={{ padding: '1rem 0' }}>
-//             <h2>Recent Articles</h2>
-//             <section className="article">
-//                 <div className="img"><img src={cat} /></div>
-//                 <div className="preview">
-//                 <div className="title"><h4>Why Do Cats Have Whiskers? </h4></div>
-//                 <div className="author">Elisabeth Strain °  02/13/17</div>
-//                     <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
-//                 <div className="comments"><Link to={"/article"}>Read whole article </Link>  4 comments</div>
-//                 </div>
-//             </section>
-//             <div className="article">
-//                 <div className="img"><img src={cat} /></div>
-//                 <div className="preview">
-//                     <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
-//                     <div className="author">Elisabeth Strain  °  02/13/17</div>
-//                     <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
-//                 <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
-//                 </div>
-//             </div>
-//             <div className="article">
-//                 <div className="img"><img src={cat} /></div>
-//                 <div className="preview">
-//                     <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
-//                     <div className="author">Elisabeth Strain  °  02/13/17</div>
-//                     <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
-//                 <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
-//                 </div>
-//             </div>
-//             <div className="article">
-//                 <div className="img"><img src={cat} /></div>
-//                 <div className="preview">
-//                     <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
-//                     <div className="author">Elisabeth Strain  °  02/13/17</div>
-//                     <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
-//                 <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
-//                 </div>
-//             </div>
-//             <div className="article">
-//                 <div className="img"><img src={cat} /></div>
-//                 <div className="preview">
-//                     <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
-//                     <div className="author">Elisabeth Strain  °  02/13/17</div>
-//                     <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
-//                 <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
-//                 </div>
-//             </div>
+return ( 
+        <main style={{ padding: '1rem 0' }}>
+            <h2>Recent Articles</h2>
+            <section className="article">
+                <div className="img"><img src={cat} /></div>
+                <div className="preview">
+                <div className="title"><h4>Why Do Cats Have Whiskers? </h4></div>
+                <div className="author">Elisabeth Strain °  02/13/17</div>
+                    <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
+                <div className="comments"><Link to={"/article"}>Read whole article </Link>  4 comments</div>
+                </div>
+            </section>
+            <div className="article">
+                <div className="img"><img src={cat} /></div>
+                <div className="preview">
+                    <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
+                    <div className="author">Elisabeth Strain  °  02/13/17</div>
+                    <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
+                <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
+                </div>
+            </div>
+            <div className="article">
+                <div className="img"><img src={cat} /></div>
+                <div className="preview">
+                    <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
+                    <div className="author">Elisabeth Strain  °  02/13/17</div>
+                    <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
+                <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
+                </div>
+            </div>
+            <div className="article">
+                <div className="img"><img src={cat} /></div>
+                <div className="preview">
+                    <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
+                    <div className="author">Elisabeth Strain  °  02/13/17</div>
+                    <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
+                <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
+                </div>
+            </div>
+            <div className="article">
+                <div className="img"><img src={cat} /></div>
+                <div className="preview">
+                    <div className="title"><h4>Why Do Cats Have Whiskers?</h4></div>
+                    <div className="author">Elisabeth Strain  °  02/13/17</div>
+                    <div className="text">A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs</div>
+                <div className="comments"><Link to={"/article"}>Read whole article</Link>  4 comments</div>
+                </div>
+            </div>
 
-//         </main>
-//     );
-// }
+        </main>
+    );
+}
 

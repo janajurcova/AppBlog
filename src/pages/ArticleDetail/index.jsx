@@ -35,6 +35,8 @@ export function Article({ article }) {
                     </p>
                     <div className="comments">
                         <h2>Comments</h2>
+                        
+                        {/* --comments in progress-- */}
                         {/* <TheComments /> */}
                     </div>
                 </div>
